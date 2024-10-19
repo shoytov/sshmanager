@@ -21,7 +21,7 @@ Make shure that you have been already installed:
 - tmux
 - ssh
 
-Download the binary executable file for your platform.   
+Download the binary executable file for your platform from [Latest release](https://github.com/shoytov/sshmanager/releases/).   
 Rename the binary file as you like. For example ```sshm```.
 Move the binary file to the directory that is contained in the PATH variable.   
 ```shell
