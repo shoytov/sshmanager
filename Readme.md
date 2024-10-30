@@ -35,6 +35,15 @@ git clone https://github.com/dimidrol/sshmanager.git
 cd sshmanager
 go build .
 ```
+
+## Use custom id rsa file
+If you want to use a custom key file, add ssh connection to config ```~/.ssh/config```. For example:
+```
+Host somehost.com
+    HostName somwhost.com
+    IdentityFile ~/.ssh/id_rsa_somehost
+```
+
 Enjoy :)
 
 ## DEMO
