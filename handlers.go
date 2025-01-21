@@ -16,7 +16,7 @@ func executeShell(server *Server, action Action) {
 
 	// Create arbitrary command.
 	if action == Shell {
-		command := fmt.Sprintf("tmux new-session -d -s newsess && tmux send-keys -t newsess 'ssh %s -p %s' C-m && tmux attach -t newsess", server.ConnectionString, server.ConnectionPort)
+		command := fmt.Sprintf("reset && ssh %s -p %s", server.ConnectionString, server.ConnectionPort)
 		c = exec.Command("bash", "-c", command)
 	} else if action == Transfer {
 		c = exec.Command("bash", "-c", "mc sh://"+server.ConnectionString+":"+server.ConnectionPort)
